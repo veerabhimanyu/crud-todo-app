@@ -1,0 +1,75 @@
+body {
+  font-family: sans-serif;
+  margin: 0 50px;
+  background-color: #e5e5e5;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #49ca9f;
+}
+
+.app {
+  background-color: #fff;
+  width: 400px;
+  height: 500px;
+  border-radius: 8px;
+  padding: 15px;
+  overflow-y: scroll;
+  box-shadow: 10px 10px;
+  border-radius: 50px;
+  background: #49ca9f;
+  box-shadow: 26px 26px 51px #1d5140, -26px -26px 51px #75fffe;
+}
+
+.app::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+#addNew {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.fa-plus {
+  background-color: #abcea1;
+  padding: 3px;
+  border-radius: 3px;
+}
+
+#tasks {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+#tasks div {
+  border: 3px solid #fbfbfb;
+  color: white;
+  background-color: #000000;
+  border-radius: 6px;
+  padding: 5px;
+  display: grid;
+  gap: 4px;
+  border-radius: 20px;
+}
+
+#tasks div .options {
+  justify-self: center;
+  display: flex;
+  gap: 20px;
+}
+
+#tasks div .options i {
+  cursor: pointer;
+}
+
+#msg {
+  color: rgb(255, 0, 0);
+}
